@@ -1,0 +1,11 @@
+
+def get_middle(s)
+ a, b = (s.length - 1).divmod(2)
+  s[a, b + 1]
+end
+
+puts get_middle("jamie")
+
+#Parameter: The function takes two number number1 and number2 whose integer division and remainder is returned.
+#Return Value: The function returns the integer division value and the remainder.
+
