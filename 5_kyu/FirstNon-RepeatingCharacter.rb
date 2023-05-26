@@ -6,12 +6,6 @@
 
 # If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
 
-# def  first_non_repeating_letter(s) 
-# 	s.chars.find {|i| s.downcase.count(i)==1 || s.upcase.count(i)==1} || ""
-# end
-
-def first_non_repeating_letter(s)
-    letter = s.chars.find { |char| s.downcase.count(char.downcase) == 1 }
-    letter.nil? ? "" : s[letter]
-  end
-  
+def  first_non_repeating_letter(s) 
+	s.chars.find {|i| s.downcase.count(i)==1 || s.upcase.count(i)==1} || ""
+end
